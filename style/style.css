@@ -1,5 +1,5 @@
 body {
-  background-color: #ececec;
+  background-color: #fff;
 }
 
 .hero-img {
@@ -21,11 +21,11 @@ body {
   border-radius: 5px;
 }
 .main-nav a:hover {
-  background: #e4e4e4;
+  background: #f7f7f7;
 }
 .main-nav a#apply {
   background: #22a7f0;
-  color: #ececec;
+  color: #fff;
   cursor: pointer;
 }
 .main-nav a#apply:hover {
@@ -37,7 +37,7 @@ body {
   padding: 0px 25px 20px 25px;
 }
 .intro .content {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #f2f2f2;
   border-radius: 5px;
   text-align: center;
   padding: 25px 15px 25px 15px;
