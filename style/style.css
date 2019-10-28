@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .hero-img {
@@ -25,7 +25,7 @@ body {
 }
 .main-nav a#apply {
   background: #22a7f0;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 .main-nav a#apply:hover {
