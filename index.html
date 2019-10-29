@@ -26,6 +26,18 @@
             <p>Join our Team! <a href="#">View Positions</a></p>
           </div>
         </div>
+        <div class="row footer">
+          <div class="col-12">
+            <div class="row">
+              <nav class="nav footer-nav">
+                <a class="nav-link" href="#" target="_blank">Leadership</a>
+                <a class="nav-link" href="#" target="_blank">Partner</a>
+                <a class="nav-link" href="#" target="_blank">Stats</a>
+                <a class="nav-link" href="#" target="_blank">MyGlobal <i class="fa fa-sign-in"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="d-none d-md-block col-md-6 col-lg-8 hero-img"></div>
     </div>
@@ -33,36 +45,96 @@
     <!-- Modals -->
 
     <div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content tab-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Application</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row" style="padding-bottom: 10px;">
-                <div class="col-12">
-                  <div class="progress" style="height: 1px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          <!-- Intro Pane -->
+          <div class="tab-pane active" id="appIntro" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="crumb-active">
+                      <span>1</span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="todo">
+                      <span>2</span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="todo">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12" style="top: 15px;">
-                  <h4>Introduction</h4>
-                  <p>Thank you for your interest in Global Logistics. We are still
-                    building our company, website, and driver's hub + tracking
-                    software. We will alert you when we open the flood gates.</p>
-                  <p>In the mean-time, we would love to build our company and talk
-                    all things ATS/ETS2 with you. See you in Discord!
                 </div>
               </div>
             </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary showBasicInfo" id="showBasicInfo" href="#appBasicInfo">Next <i class="fa fa-arrow-right"></i></a>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" disabled>Next</button>
+          <!-- Basic Info Pane -->
+          <div class="tab-pane" id="appBasicInfo" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="completed">
+                      <span></span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="crumb-active">
+                      <span>2</span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="todo">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-outline" id="showIntro" href="#appIntro"><i class="fa fa-arrow-left"></i> Back</a>
+              <a class="btn btn-primary" id="showPolicies" href="#appPolicies">Next <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Policies Pane -->
+          <div class="tab-pane" id="appPolicies" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="completed">
+                      <span></span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="completed">
+                      <span></span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="crumb-active">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-outline showBasicInfo" id="showBasicInfo" href="#appBasicInfo"><i class="fa fa-arrow-left"></i> Back</a>
+              <a class="btn btn-primary" href="#">Apply <i class="fa fa-check"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -71,4 +143,24 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e2eb6553b9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#showIntro").click(function(){
+        $('#appIntro').show();
+        $('#appBasicInfo').hide();
+        $('#appPolicies').hide();
+      });
+      $(".showBasicInfo").click(function(){
+        $('#appIntro').hide();
+        $('#appPolicies').hide();
+        $('#appBasicInfo').show();
+      });
+      $("#showPolicies").click(function(){
+        $('#appIntro').hide();
+        $('#appBasicInfo').hide();
+        $('#appPolicies').show();
+      })
+    });
+  </script>
 </html>

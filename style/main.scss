@@ -38,6 +38,30 @@ body {
   }
 }
 
+.footer-nav {
+  margin: 0px auto;
+  color: $background-color;
+  max-width: 85%;
+  font-size: 85%;
+
+  a {
+    color: inherit;
+    padding: 5px 10px 10px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background: lighten($secondary-color, 5%);
+    }
+  }
+  a#apply {
+    background: $primary-color;
+    color: $background-color;
+    cursor: pointer;
+
+    &:hover { background: darken($primary-color, 3%); }
+  }
+}
+
 .intro {
   margin-top: 0px;
   padding: 0px 25px 20px 25px;
@@ -54,4 +78,75 @@ body {
     h6 { margin-top: 10px; }
     p { margin-top: 35px; }
   }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  background: $secondary-color;
+}
+
+.breadcrumb-pagination {
+    width:100%;
+    border-bottom:1px solid #E1E6EB;
+    text-align:center;
+    float:left;
+    color:#B3B7C1;
+  }
+
+.breadcrumb-pagination div {
+    width: 25%;
+    display:inline-block;
+  }
+
+.breadcrumb-pagination div span {
+    margin:0 auto;
+    display:block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding:0px 0 0 0px;
+    font-size:20px;
+    line-height: 35px;
+  }
+
+.completed span {
+    background-color:NONE;
+    color:#95db89;
+    border:2px solid #95db89;
+  }
+
+.crumb-active span {
+    background-color: $primary-color;
+    color:#fff;
+  }
+
+.todo span {
+    background-color:none;
+    color:#E1E6EB;
+    border:2px solid #E1E6EB;
+  }
+
+.breadcrumb-pagination div p {
+    text-align:center;
+    line-height:0px;
+    margin:30px auto 25px;
+  }
+
+.crumb-active p {
+   border-bottom:2px solid $primary-color;
+   padding-bottom:27px;
+   margin-bottom:0px !important;
+   color: #3c4043;
+   font-weight:700;
+}
+
+.completed p {
+    color:#bsb7c1;
+  }
+
+.completed span::before {
+  content: '\2713'
 }
