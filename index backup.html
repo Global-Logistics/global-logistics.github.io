@@ -49,13 +49,88 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="typeform-widget" data-url="https://matthewjames.typeform.com/to/LZrWFo" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+          <!-- Intro Pane -->
+          <div class="tab-pane active" id="appIntro" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="crumb-active">
+                      <span>1</span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="todo">
+                      <span>2</span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="todo">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary showBasicInfo" id="showBasicInfo" href="#appBasicInfo">Next <i class="fa fa-arrow-right"></i></a>
+            </div>
           </div>
-          <div class="modal-footer appList" role="tablist">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <!--<a class="btn btn-outline showBasicInfo" id="showBasicInfo" href="#appBasicInfo"><i class="fa fa-arrow-left"></i> Back</a>
-            <a class="btn btn-primary" href="#">Apply <i class="fa fa-check"></i></a>-->
+          <!-- Basic Info Pane -->
+          <div class="tab-pane" id="appBasicInfo" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="completed">
+                      <span></span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="crumb-active">
+                      <span>2</span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="todo">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-outline" id="showIntro" href="#appIntro"><i class="fa fa-arrow-left"></i> Back</a>
+              <a class="btn btn-primary" id="showPolicies" href="#appPolicies">Next <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Policies Pane -->
+          <div class="tab-pane" id="appPolicies" role="tabpanel">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row" style="padding-bottom: 10px;">
+                  <div class="col-12 breadcrumb-pagination" style="top: 15px;">
+                    <div class="completed">
+                      <span></span>
+                      <p>Intro</p>
+                    </div>
+                    <div class="completed">
+                      <span></span>
+                      <p>Basic Info</p>
+                    </div>
+                    <div class="crumb-active">
+                      <span>3</span>
+                      <p>Policies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer appList" role="tablist">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-outline showBasicInfo" id="showBasicInfo" href="#appBasicInfo"><i class="fa fa-arrow-left"></i> Back</a>
+              <a class="btn btn-primary" href="#">Apply <i class="fa fa-check"></i></a>
+            </div>
           </div>
         </div>
       </div>
